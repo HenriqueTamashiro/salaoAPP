@@ -7,23 +7,26 @@ import { Calendar, Scissors, User, Star, Clock, ArrowRight } from 'lucide-react-
 import Colors from '@/constants/Colors';
 import { useRouter } from 'expo-router';
 
+
+
 const { width } = Dimensions.get('window');
 
 export default function HomeScreen() {
   const router = useRouter();
   
-  const promotions = [
-    {
-      id: '1',
-      title: 'Summer Special',
-      description: 'Get 20% off on all hair coloring services this summer',
-      image: 'https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    },
+
+const promotions = [
+  {
+    id: '1',
+    title: 'Especial de Outono',
+    description: '10% em todos os serviços de coloração para cabelos durante o outono',
+    image: '/images/promo-outono.jpg', 
+  },
     {
       id: '2',
-      title: 'New Client Offer',
-      description: 'First-time clients receive a complimentary deep conditioning treatment',
-      image: 'https://images.pexels.com/photos/3992874/pexels-photo-3992874.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      title: 'Ofertas para Novos Clientes',
+      description: '30% de desconto em qualquer serviço para novos clientes',
+      image: '/images/newClientEdited.png',
     },
   ];
 
@@ -82,6 +85,7 @@ export default function HomeScreen() {
           </Text>
           <Button
             title="Faça um agendamento"
+            title="Faça um Agendamento"
             onPress={() => router.push('/appointments')}
             style={styles.heroButton}
             size="lg"

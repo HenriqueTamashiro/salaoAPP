@@ -6,6 +6,7 @@ import Button from '@/components/ui/Button';
 import Colors from '@/constants/Colors';
 import { useRouter } from 'expo-router';
 import { Clock, DollarSign } from 'lucide-react-native';
+import { RealSign } from '@/components/ui/RealSign';
 
 export default function ServicesScreen() {
   const router = useRouter();
@@ -17,7 +18,7 @@ export default function ServicesScreen() {
     { id: 'nails', name: 'Unhas' },
     { id: 'face', name: 'Facial' },
     { id: 'massage', name: 'Massagem' },
-    { id: 'makeup', name: '<Maquiagem>' },
+    { id: 'makeup', name: 'Maquiagem' },
   ];
 
   const services = [
@@ -136,8 +137,9 @@ export default function ServicesScreen() {
                 
                 <View style={styles.serviceMetaContainer}>
                   <View style={styles.serviceMeta}>
-                    <DollarSign size={16} color={Colors.neutral[600]} />
+                   <RealSign size={16} color={Colors.neutral[600]} />
                     <Text variant="body" color="secondary" style={styles.serviceMetaText}>
+                      {service.price}
                       R${service.price}
                     </Text>
                   </View>
