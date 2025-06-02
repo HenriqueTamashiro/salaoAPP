@@ -78,10 +78,10 @@ export default function HomeScreen() {
             Dia de Beleza
           </Text>
           <Text variant="body" color="white" style={styles.heroSubtitle}>
-            Where beauty meets expertise
+            Onde a beleza encontra a experiência
           </Text>
           <Button
-            title="Book an Appointment"
+            title="Faça um agendamento"
             onPress={() => router.push('/appointments')}
             style={styles.heroButton}
             size="lg"

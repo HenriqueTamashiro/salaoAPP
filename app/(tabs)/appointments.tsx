@@ -63,10 +63,10 @@ export default function AppointmentsScreen() {
     <ScrollView style={styles.container}>
       <View style={styles.header}>
         <Text variant="h2" weight="semibold">
-          Book Appointment
+          Faça um Agendamento
         </Text>
         <Text variant="body" color="secondary" style={styles.headerSubtitle}>
-          Select a date, time, and service
+          Selecione um data, um horário e um serviço disponível
         </Text>
       </View>
 
@@ -75,7 +75,7 @@ export default function AppointmentsScreen() {
         <View style={styles.sectionHeader}>
           <CalendarIcon size={20} color={Colors.primary[500]} />
           <Text variant="h4" weight="semibold" style={styles.sectionTitle}>
-            Select Date
+            Selecione uma Data
           </Text>
         </View>
         
@@ -129,7 +129,7 @@ export default function AppointmentsScreen() {
           <View style={styles.sectionHeader}>
             <Clock size={20} color={Colors.primary[500]} />
             <Text variant="h4" weight="semibold" style={styles.sectionTitle}>
-              Select Time
+              Selecione um Horário
             </Text>
           </View>
           
@@ -161,7 +161,7 @@ export default function AppointmentsScreen() {
           <View style={styles.sectionHeader}>
             <Check size={20} color={Colors.primary[500]} />
             <Text variant="h4" weight="semibold" style={styles.sectionTitle}>
-              Select Service
+              Selecione um Serviço
             </Text>
           </View>
           
@@ -251,7 +251,7 @@ export default function AppointmentsScreen() {
         <View style={styles.bookingSection}>
           <Card style={styles.summaryCard}>
             <Text variant="h4" weight="semibold" style={styles.summaryTitle}>
-              Appointment Summary
+              Resumo
             </Text>
             
             <View style={styles.summaryItem}>
@@ -269,7 +269,7 @@ export default function AppointmentsScreen() {
             
             <View style={styles.summaryItem}>
               <Text variant="bodySmall" color="secondary">
-                Time:
+                Hora:
               </Text>
               <Text variant="body" weight="medium">
                 {selectedTime}
@@ -278,7 +278,7 @@ export default function AppointmentsScreen() {
             
             <View style={styles.summaryItem}>
               <Text variant="bodySmall" color="secondary">
-                Service:
+                Serviço:
               </Text>
               <Text variant="body" weight="medium">
                 {services.find(s => s.id === selectedService)?.name}

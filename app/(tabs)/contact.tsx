@@ -46,10 +46,10 @@ export default function ContactScreen() {
     <ScrollView style={styles.container}>
       <View style={styles.header}>
         <Text variant="h2" weight="semibold">
-          Contact Us
+          Nos Contate
         </Text>
         <Text variant="body" color="secondary" style={styles.headerSubtitle}>
-          We'd love to hear from you
+          Adoraríamos ouvi-lo
         </Text>
       </View>
 
@@ -58,10 +58,10 @@ export default function ContactScreen() {
         <View style={styles.map}>
           <MapPin size={48} color={Colors.primary[500]} />
           <Text variant="body" weight="medium" style={styles.mapText}>
-            Interactive Map
+            Mapa interativo
           </Text>
           <Text variant="bodySmall" color="secondary">
-            Tap to open in Maps
+            Toque para abrir em Mapas
           </Text>
         </View>
         <Button
@@ -74,7 +74,7 @@ export default function ContactScreen() {
       {/* Contact Information */}
       <View style={styles.section}>
         <Text variant="h3" weight="semibold" style={styles.sectionTitle}>
-          Salon Information
+          Quem Somos
         </Text>
 
         <Card style={styles.infoCard}>
@@ -84,7 +84,7 @@ export default function ContactScreen() {
             </View>
             <View style={styles.infoContent}>
               <Text variant="bodySmall" color="secondary">
-                Address
+                Endereço
               </Text>
               <Text variant="body">{salonInfo.address}</Text>
             </View>
@@ -96,7 +96,7 @@ export default function ContactScreen() {
             </View>
             <View style={styles.infoContent}>
               <Text variant="bodySmall" color="secondary">
-                Phone
+                Telefone para contato
               </Text>
               <Text variant="body" color="accent">
                 {salonInfo.phone}
@@ -123,14 +123,14 @@ export default function ContactScreen() {
       {/* Business Hours */}
       <View style={styles.section}>
         <Text variant="h3" weight="semibold" style={styles.sectionTitle}>
-          Business Hours
+          Nossos Horários
         </Text>
 
         <Card style={styles.hoursCard}>
           <View style={styles.hoursHeader}>
             <Clock size={20} color={Colors.primary[500]} />
             <Text variant="body" weight="medium" style={styles.hoursHeaderText}>
-              Opening Hours
+              Horário de Funcionamento
             </Text>
           </View>
 
@@ -153,7 +153,7 @@ export default function ContactScreen() {
       {/* Social Media */}
       <View style={styles.section}>
         <Text variant="h3" weight="semibold" style={styles.sectionTitle}>
-          Follow Us
+          Nos Siga
         </Text>
 
         <View style={styles.socialContainer}>
@@ -175,16 +175,16 @@ export default function ContactScreen() {
       {/* Contact Form */}
       <View style={styles.section}>
         <Text variant="h3" weight="semibold" style={styles.sectionTitle}>
-          Send a Message
+          Mande uma Mensagem
         </Text>
 
         <Card style={styles.formCard}>
           <Text variant="body" color="secondary" style={styles.formText}>
-            Have questions or need to get in touch? Send us a message and we'll
-            get back to you as soon as possible.
+            Tem dúvidas ou precisa entrar em contato? 
+            Envie-nos uma mensagem e entraremos em contato o mais breve possível.
           </Text>
           <Button
-            title="Contact Us"
+            title="Nos Contate"
             onPress={handleEmail}
             style={styles.contactButton}
             size="lg"

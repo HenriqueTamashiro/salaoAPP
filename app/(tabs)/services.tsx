@@ -23,8 +23,8 @@ export default function ServicesScreen() {
   const services = [
     {
       id: '1',
-      title: 'Women\'s Haircut & Styling',
-      description: 'Includes consultation, shampoo, cut, and blow dry styling',
+      title: 'Corte de cabelo e estilo feminino',
+      description: 'Inclui consulta, lavagem, corte e escova para estilização',
       price: 45,
       time: '45 min',
       category: 'hair',
@@ -32,8 +32,8 @@ export default function ServicesScreen() {
     },
     {
       id: '2',
-      title: 'Men\'s Haircut',
-      description: 'Classic cut with styling and finishing',
+      title: 'Corte de cabelo masculino',
+      description: 'Corte clássico com estilo e acabamento',
       price: 30,
       time: '30 min',
       category: 'hair',
@@ -41,8 +41,8 @@ export default function ServicesScreen() {
     },
     {
       id: '3',
-      title: 'Hair Coloring',
-      description: 'Single process color with professional products',
+      title: 'Coloração',
+      description: 'Processo de coloração com produtos profissionais',
       price: 85,
       time: '90 min',
       category: 'hair',
@@ -50,8 +50,8 @@ export default function ServicesScreen() {
     },
     {
       id: '4',
-      title: 'Classic Manicure',
-      description: 'Nail shaping, cuticle care, hand massage, and polish',
+      title: 'Manicure',
+      description: 'Modelagem de unhas, cuidados com cutículas, massagem nas mãos e polimento',
       price: 35,
       time: '45 min',
       category: 'nails',
@@ -59,8 +59,8 @@ export default function ServicesScreen() {
     },
     {
       id: '5',
-      title: 'Gel Pedicure',
-      description: 'Long-lasting gel polish with foot spa treatment',
+      title: 'Pedicure',
+      description: 'Tratamento de spa para os pés',
       price: 55,
       time: '60 min',
       category: 'nails',
@@ -68,8 +68,8 @@ export default function ServicesScreen() {
     },
     {
       id: '6',
-      title: 'Hydrating Facial',
-      description: 'Deep cleansing and moisturizing treatment for all skin types',
+      title: 'Hidratação Facial',
+      description: 'Tratamento de limpeza profunda e hidratação para todos os tipos de pele',
       price: 70,
       time: '60 min',
       category: 'face',
@@ -86,10 +86,10 @@ export default function ServicesScreen() {
       {/* Header */}
       <View style={styles.header}>
         <Text variant="h2" weight="semibold">
-          Our Services
+          Nossos Serviços
         </Text>
         <Text variant="body" color="secondary" style={styles.headerSubtitle}>
-          Discover our range of beauty treatments
+          Descubra a nossa gama de tratamentos de beleza
         </Text>
       </View>
 
@@ -138,7 +138,7 @@ export default function ServicesScreen() {
                   <View style={styles.serviceMeta}>
                     <DollarSign size={16} color={Colors.neutral[600]} />
                     <Text variant="body" color="secondary" style={styles.serviceMetaText}>
-                      ${service.price}
+                      R${service.price}
                     </Text>
                   </View>
                   
@@ -151,7 +151,7 @@ export default function ServicesScreen() {
                 </View>
                 
                 <Button
-                  title="Book Now"
+                  title="Agende Agora"
                   onPress={() => router.push('/appointments')}
                   style={styles.bookButton}
                 />

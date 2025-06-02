@@ -76,7 +76,7 @@ export default function ProfileScreen() {
               Glamour Beauty
             </Text>
             <Text variant="body" color="white">
-              Sign in to manage your appointments
+              Faça login para gerenciar seus agendamentos
             </Text>
           </View>
         </View>
@@ -84,11 +84,11 @@ export default function ProfileScreen() {
         <View style={styles.loginForm}>
           <Card style={styles.loginCard}>
             <Text variant="h3" weight="semibold" style={styles.loginTitle}>
-              Welcome Back
+              Bem-vindo de volta
             </Text>
             
             <Button
-              title="Sign In"
+              title="Faça Login"
               onPress={handleLogin}
               style={styles.loginButton}
               size="lg"
@@ -96,9 +96,9 @@ export default function ProfileScreen() {
             
             <TouchableOpacity style={styles.signupLink}>
               <Text variant="body" color="secondary">
-                Don't have an account?{' '}
+                Não tem uma conta?{' '}
                 <Text variant="body" color="accent" weight="medium">
-                  Sign Up
+                  Cadastre-se
                 </Text>
               </Text>
             </TouchableOpacity>
@@ -135,7 +135,7 @@ export default function ProfileScreen() {
             <Calendar size={20} color={Colors.primary[500]} />
           </View>
           <Text variant="bodySmall" style={styles.actionText}>
-            My Bookings
+            Meus Agendamentos
           </Text>
         </TouchableOpacity>
         
@@ -144,7 +144,7 @@ export default function ProfileScreen() {
             <Bell size={20} color={Colors.primary[500]} />
           </View>
           <Text variant="bodySmall" style={styles.actionText}>
-            Notifications
+            Notificações
           </Text>
         </TouchableOpacity>
         
@@ -153,7 +153,7 @@ export default function ProfileScreen() {
             <Settings size={20} color={Colors.primary[500]} />
           </View>
           <Text variant="bodySmall" style={styles.actionText}>
-            Settings
+            Configurações
           </Text>
         </TouchableOpacity>
         
@@ -162,7 +162,7 @@ export default function ProfileScreen() {
             <LogOut size={20} color={Colors.error[500]} />
           </View>
           <Text variant="bodySmall" color="error" style={styles.actionText}>
-            Logout
+            Sair
           </Text>
         </TouchableOpacity>
       </View>
@@ -171,11 +171,11 @@ export default function ProfileScreen() {
       <View style={styles.section}>
         <View style={styles.sectionHeader}>
           <Text variant="h4" weight="semibold">
-            Upcoming Appointments
+            Próximos Agendamentos
           </Text>
           <TouchableOpacity>
             <Text variant="bodySmall" color="accent">
-              View All
+              Ver Tudo
             </Text>
           </TouchableOpacity>
         </View>
@@ -189,7 +189,7 @@ export default function ProfileScreen() {
                 </Text>
                 <View style={styles.appointmentBadge}>
                   <Text variant="caption" color="white">
-                    Upcoming
+                    Em Seguida
                   </Text>
                 </View>
               </View>
@@ -240,7 +240,7 @@ export default function ProfileScreen() {
           <Card style={styles.emptyStateCard}>
             <Calendar size={48} color={Colors.neutral[400]} />
             <Text variant="body" color="secondary" style={styles.emptyStateText}>
-              No upcoming appointments
+              Não há novos agendamentos
             </Text>
             <Button
               title="Book Now"
@@ -257,11 +257,11 @@ export default function ProfileScreen() {
       <View style={styles.section}>
         <View style={styles.sectionHeader}>
           <Text variant="h4" weight="semibold">
-            Past Appointments
+            Agendamentos Passados
           </Text>
           <TouchableOpacity>
             <Text variant="bodySmall" color="accent">
-              View All
+              Ver Tudo
             </Text>
           </TouchableOpacity>
         </View>
