@@ -84,7 +84,8 @@ const promotions = [
             Onde a beleza encontra a experiência
           </Text>
           <Button
-            title="Faça um Agendamento"
+          
+           title="Faça um Agendamento"
             onPress={() => router.push('/appointments')}
             style={styles.heroButton}
             size="lg"
