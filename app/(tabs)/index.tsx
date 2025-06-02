@@ -78,7 +78,7 @@ const promotions = [
         />
         <View style={styles.heroContent}>
           <Text variant="h1" color="white" weight="semibold">
-            Dia de Beleza
+            Karoll Novo Estilo
           </Text>
           <Text variant="body" color="white" style={styles.heroSubtitle}>
             Onde a beleza encontra a experiência

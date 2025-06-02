@@ -140,7 +140,7 @@ export default function ServicesScreen() {
                    <RealSign size={16} color={Colors.neutral[600]} />
                     <Text variant="body" color="secondary" style={styles.serviceMetaText}>
                       {service.price}
-                      R${service.price}
+                      
                     </Text>
                   </View>
                   

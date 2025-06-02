@@ -73,7 +73,7 @@ export default function ProfileScreen() {
           />
           <View style={styles.loginTitleContainer}>
             <Text variant="h2" color="white" weight="semibold">
-              Glamour Beauty
+              Karoll Novo Estilo
             </Text>
             <Text variant="body" color="white">
               Faça login para gerenciar seus agendamentos

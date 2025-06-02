@@ -8,19 +8,18 @@ import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Twitter } from 'lucide
 
 export default function ContactScreen() {
   const salonInfo = {
-    name: 'Glamour Beauty Salon',
-    address: '123 Fashion Street, Beverly Hills, CA 90210',
-    phone: '+1 (555) 123-4567',
-    email: 'info@glamourbeauty.com',
+    name: 'Karoll Novo',
+    address: 'Rua Artur Alvim, 141',
+    phone: ' (11) 98989-4471',
+    email: 'estudanteana2@gmail.com',
     hours: [
-      { day: 'Monday - Friday', hours: '9:00 AM - 7:00 PM' },
-      { day: 'Saturday', hours: '10:00 AM - 6:00 PM' },
-      { day: 'Sunday', hours: 'Closed' },
+      { day: 'Terça - Domingo', hours: '9:00 AM - 7:00 PM' },
+      { day: 'Segunda', hours: 'Fechado' },
     ],
     socialMedia: [
-      { name: 'Instagram', icon: <Instagram size={24} color={Colors.primary[500]} />, url: 'https://instagram.com' },
+      { name: 'Instagram', icon: <Instagram size={24} color={Colors.primary[500]} />, url: 'https://www.instagram.com/hairstyleanacarolina?utm_source=qr' },
       { name: 'Facebook', icon: <Facebook size={24} color={Colors.primary[500]} />, url: 'https://facebook.com' },
-      { name: 'Twitter', icon: <Twitter size={24} color={Colors.primary[500]} />, url: 'https://twitter.com' },
+      { name: 'X', icon: <Twitter size={24} color={Colors.primary[500]} />, url: 'https://x.com/' },
     ],
   };
 
@@ -65,7 +64,7 @@ export default function ContactScreen() {
           </Text>
         </View>
         <Button
-          title="Get Directions"
+          title="Ver no Mapa"
           onPress={handleGetDirections}
           style={styles.directionsButton}
         />
@@ -141,7 +140,7 @@ export default function ContactScreen() {
               </Text>
               <Text
                 variant="body"
-                color={item.hours === 'Closed' ? 'error' : 'secondary'}
+                color={item.hours === 'Fechado' ? 'error' : 'secondary'}
               >
                 {item.hours}
               </Text>
