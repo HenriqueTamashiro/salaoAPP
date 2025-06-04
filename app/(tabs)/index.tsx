@@ -62,7 +62,7 @@ const promotions = [
       id: '1',
       name: 'Ana Carolina',
       role: 'Cabelereira Geral',
-      image: 'https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: './images/personProfile.png',
       rating: 4.9,
     },
 
