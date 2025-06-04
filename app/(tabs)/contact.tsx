@@ -9,7 +9,7 @@ import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Twitter } from 'lucide
 export default function ContactScreen() {
   const salonInfo = {
     name: 'Karoll Novo',
-    address: 'Rua Artur Alvim, 141',
+    address: 'Rua Artur Alvim 141',
     phone: ' (11) 98989-4471',
     email: 'estudanteana2@gmail.com',
     hours: [
@@ -33,7 +33,7 @@ export default function ContactScreen() {
 
   const handleGetDirections = () => {
     const scheme = Platform.OS === 'ios' ? 'maps:' : 'geo:';
-    const url = `${scheme}0,0?q=${encodeURIComponent(salonInfo.address)}`;
+    const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(salonInfo.address)}`;
     Linking.openURL(url);
   };
 
@@ -70,7 +70,7 @@ export default function ContactScreen() {
         />
       </View>
 
-      {/* Contact Information */}
+      {/* Informações de contato */}
       <View style={styles.section}>
         <Text variant="h3" weight="semibold" style={styles.sectionTitle}>
           Quem Somos
@@ -119,7 +119,7 @@ export default function ContactScreen() {
         </Card>
       </View>
 
-      {/* Business Hours */}
+      {/* Horário de funcionamento */}
       <View style={styles.section}>
         <Text variant="h3" weight="semibold" style={styles.sectionTitle}>
           Nossos Horários
@@ -149,7 +149,7 @@ export default function ContactScreen() {
         </Card>
       </View>
 
-      {/* Social Media */}
+      {/* Redes Sociais */}
       <View style={styles.section}>
         <Text variant="h3" weight="semibold" style={styles.sectionTitle}>
           Nos Siga
@@ -171,7 +171,7 @@ export default function ContactScreen() {
         </View>
       </View>
 
-      {/* Contact Form */}
+      {/* Formulário de contato */}
       <View style={styles.section}>
         <Text variant="h3" weight="semibold" style={styles.sectionTitle}>
           Mande uma Mensagem

@@ -9,7 +9,7 @@ import { User, Calendar, LogOut, Clock, Settings, Bell } from 'lucide-react-nati
 export default function ProfileScreen() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   
-  // Mock user data
+  
   const userData = {
     name: 'Jennifer Lawrence',
     email: 'jennifer@example.com',
@@ -17,11 +17,11 @@ export default function ProfileScreen() {
     profileImage: 'https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
   };
 
-  // Mock upcoming appointments
+  
   const upcomingAppointments = [
     {
       id: '1',
-      service: 'Haircut & Styling',
+      service: 'Corte Feminino',
       stylist: 'Emma Thompson',
       date: 'Mon, Jun 12',
       time: '2:00 PM',
@@ -35,18 +35,18 @@ export default function ProfileScreen() {
     },
   ];
 
-  // Mock past appointments
+  
   const pastAppointments = [
     {
       id: '3',
-      service: 'Hair Coloring',
+      service: 'Coloração',
       stylist: 'Alex Parker',
       date: 'May 15, 2023',
       time: '10:00 AM',
     },
     {
       id: '4',
-      service: 'Facial Treatment',
+      service: 'Tratamento Facial',
       stylist: 'Emma Thompson',
       date: 'Apr 28, 2023',
       time: '3:30 PM',
@@ -54,12 +54,12 @@ export default function ProfileScreen() {
   ];
 
   const handleLogin = () => {
-    // Mock login functionality
+    
     setIsLoggedIn(true);
   };
 
   const handleLogout = () => {
-    // Mock logout functionality
+    
     setIsLoggedIn(false);
   };
 
@@ -110,7 +110,7 @@ export default function ProfileScreen() {
 
   return (
     <ScrollView style={styles.container}>
-      {/* Profile Header */}
+      {/* Cabeçalho do Perfil */}
       <View style={styles.profileHeader}>
         <View style={styles.profileInfo}>
           <Image source={{ uri: userData.profileImage }} style={styles.profileImage} />
@@ -219,14 +219,14 @@ export default function ProfileScreen() {
               
               <View style={styles.appointmentActions}>
                 <Button
-                  title="Reschedule"
+                  title="Reagendar"
                   variant="outline"
                   size="sm"
                   onPress={() => {}}
                   style={styles.appointmentActionButton}
                 />
                 <Button
-                  title="Cancel"
+                  title="Cancelar"
                   variant="ghost"
                   size="sm"
                   onPress={() => {}}
@@ -243,7 +243,7 @@ export default function ProfileScreen() {
               Não há novos agendamentos
             </Text>
             <Button
-              title="Book Now"
+              title="Agendar Agora"
               variant="primary"
               size="md"
               onPress={() => {}}
@@ -280,7 +280,7 @@ export default function ProfileScreen() {
               </Text>
             </View>
             <Button
-              title="Book Again"
+              title="Agendar novamente"
               variant="outline"
               size="sm"
               onPress={() => {}}

@@ -25,18 +25,15 @@ export default function AppointmentsScreen() {
   ];
 
   const services = [
-    { id: '1', name: 'Women\'s Haircut & Styling', price: 45, duration: '45 min' },
-    { id: '2', name: 'Men\'s Haircut', price: 30, duration: '30 min' },
-    { id: '3', name: 'Hair Coloring', price: 85, duration: '90 min' },
-    { id: '4', name: 'Classic Manicure', price: 35, duration: '45 min' },
-    { id: '5', name: 'Gel Pedicure', price: 55, duration: '60 min' },
+    { id: '1', name: 'Corte de cabelo e estilo feminino' , price: 45, duration: '45 min' },
+    { id: '2', name: 'Corte de cabelo masculino', price: 30, duration: '30 min' },
+    { id: '3', name: 'Coloração', price: 85, duration: '90 min' },
+    { id: '4', name: 'Manicure', price: 35, duration: '45 min' },
+    { id: '5', name: 'Pedicure', price: 55, duration: '60 min' },
   ];
 
   const stylists = [
-    { id: '1', name: 'Emma Thompson', role: 'Senior Stylist' },
-    { id: '2', name: 'Alex Parker', role: 'Color Specialist' },
-    { id: '3', name: 'Sofia Garcia', role: 'Nail Technician' },
-    { id: '4', name: 'James Wilson', role: 'Master Barber' },
+    { id: '1', name: 'Ana Carolina', role: 'Cabeleireira Profissional' },
   ];
 
   const formatDate = (date: Date) => {
@@ -55,8 +52,7 @@ export default function AppointmentsScreen() {
   };
 
   const handleBookAppointment = () => {
-    // Implement booking logic here
-    alert('Appointment booked successfully!');
+    alert('Agendado com sucesso!');
   };
 
   return (
@@ -70,7 +66,7 @@ export default function AppointmentsScreen() {
         </Text>
       </View>
 
-      {/* Date Selection */}
+      {/* Seleção de data */}
       <View style={styles.section}>
         <View style={styles.sectionHeader}>
           <CalendarIcon size={20} color={Colors.primary[500]} />
@@ -123,7 +119,7 @@ export default function AppointmentsScreen() {
         </ScrollView>
       </View>
 
-      {/* Time Selection */}
+      {/* Seleção de hora */}
       {selectedDate && (
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
@@ -155,7 +151,7 @@ export default function AppointmentsScreen() {
         </View>
       )}
 
-      {/* Service Selection */}
+      {/* Seleção de Serviço */}
       {selectedTime && (
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
@@ -205,13 +201,13 @@ export default function AppointmentsScreen() {
         </View>
       )}
 
-      {/* Stylist Selection */}
+      {/* Seleção de profissional */}
       {selectedService && (
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
             <CalendarIcon size={20} color={Colors.primary[500]} />
             <Text variant="h4" weight="semibold" style={styles.sectionTitle}>
-              Select Stylist
+              Selecione o profissional
             </Text>
           </View>
           
@@ -246,7 +242,7 @@ export default function AppointmentsScreen() {
         </View>
       )}
 
-      {/* Booking Button */}
+      {/* Botão de marcação */}
       {selectedDate && selectedTime && selectedService && selectedStylist && (
         <View style={styles.bookingSection}>
           <Card style={styles.summaryCard}>
@@ -256,7 +252,7 @@ export default function AppointmentsScreen() {
             
             <View style={styles.summaryItem}>
               <Text variant="bodySmall" color="secondary">
-                Date:
+                Data:
               </Text>
               <Text variant="body" weight="medium">
                 {new Date(selectedDate).toLocaleDateString('en-US', {
@@ -287,7 +283,7 @@ export default function AppointmentsScreen() {
             
             <View style={styles.summaryItem}>
               <Text variant="bodySmall" color="secondary">
-                Stylist:
+                Profissional:
               </Text>
               <Text variant="body" weight="medium">
                 {stylists.find(s => s.id === selectedStylist)?.name}
@@ -296,7 +292,7 @@ export default function AppointmentsScreen() {
           </Card>
           
           <Button
-            title="Confirm Booking"
+            title="Confirmar agendamento"
             onPress={handleBookAppointment}
             size="lg"
             style={styles.bookButton}
