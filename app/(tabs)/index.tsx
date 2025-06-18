@@ -92,6 +92,10 @@ const promotions = [
           />
         </View>
       </View>
+      
+      <View style={styles.promotionCard}>
+
+      </View>
 
       {/* Promotions Section */}
       <View style={styles.section}>
@@ -205,6 +209,12 @@ const promotions = [
           ))}
         </ScrollView>
       </View>
+
+
+          
+
+
+      
 
       {/* Quick Actions */}
       <View style={styles.quickActionsContainer}>
